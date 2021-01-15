@@ -1,4 +1,15 @@
-<h1 id="endurio-proof-of-reference">Endurio: Proof of Reference</h1>
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Endurio: Proof of Reference</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><h1 id="endurio-proof-of-reference">Endurio: Proof of Reference</h1>
 <p>Every Bitcoin transaction can be sent with memo text in an OP_RET output. This memo can be used to promote user brand in everyday transactions.</p>
 <p>The Endurio Protocol is designed to create an incentive for Bitcoin users to include a small memo into their everyday transactions to promote any brand paid in the market.</p>
 <h2 id="table-of-contents">Table of Contents</h2>
@@ -321,4 +332,7 @@ With <span class="katex--inline"><span class="katex"><span class="katex-mathml">
 <p>The Proof of Reference is originally designed for Bitcoin as the target mining protocol and optimized to be relayed to Ethereum EVM as the host smart-contract platform. It could work with other protocols of the same family, and more target protocols will be supported in the future.</p>
 <h2 id="appendix-a-commission-distribution">Appendix A: Commission Distribution</h2>
 <p>TODO</p>
+</div>
+</body>
 
+</html>
