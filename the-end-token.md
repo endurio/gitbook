@@ -1,3 +1,7 @@
+---
+description: One token to END them all.
+---
+
 # The END Token
 
 Endcoin (END) is the crypto token of the Endurio Protocol.
