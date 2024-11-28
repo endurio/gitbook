@@ -14,3 +14,6 @@
 * [Referral Network](referral-network/README.md)
   * [Rent](referral-network/rent.md)
   * [Commission](referral-network/commission.md)
+* [Brand Market](brand-market/README.md)
+  * [Campaign](brand-market/campaign.md)
+  * [Brands Mining](brand-market/brands-mining.md)
