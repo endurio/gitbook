@@ -21,13 +21,15 @@ Day $$n$$ (starting with block `144×n`) contains at most 12 boosted blocks, whe
 
 Boosted blocks with significantly higher rewards are designed to engage human miners, making miner bots less advantageous during the initial phase of the protocol. The mining reward for the i-th boosted block is calculated as:
 
-$$Reward_i = 2^{6-i} \times BaseReward$$
+$$2^{6-i} \times BaseReward$$
 
 For example, if the **BaseReward** is 1 END, the rewards for boosted blocks in a day will include:
 
-* one block with a reward of 64 END,
+* one block with 64 END,
 * one block with 32 END,
 * one block with 16 END,
+* one block with 8 END,
+* one block with 4 END,
 * and so on.
 
 **Note:** Boosted blocks of different orders can collide, meaning some of the daily boosted rewards may be lost.
@@ -36,4 +38,4 @@ For example, if the **BaseReward** is 1 END, the rewards for boosted blocks in a
 
 All blocks other than the 12 boosted blocks are considered **non-boosted blocks** and have a mining reward of:
 
-$$Reward_{NB} = 2^-12 \times BaseReward$$
+$$2^{-12} \times BaseReward$$
