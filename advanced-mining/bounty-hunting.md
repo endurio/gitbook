@@ -2,9 +2,7 @@
 
 Bounty hunting is to mine a brand and sending some random recent transactors a _useful amount of coin_.
 
-
-
-<figure><img src="https://raw.githubusercontent.com/endurio/media/main/btc-tx-mining-bounty.svg?sanity=true" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption><p>Bounty Hunting Transaction</p></figcaption></figure>
 
 Bounty outputs are all outputs after the first OP\_RET except the last one (reserved for coin change). A transaction can have up to 8 bounty outputs, but only one of the bounty output is randomly sampled for verification.
 
