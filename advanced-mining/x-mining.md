@@ -8,4 +8,4 @@ To x-mine a brand, the brand memo (in OP\_RET) is appended with one space charac
 OP_RET "endur.io x6"
 ```
 
-An x-mining transaction is valid only in a block with $$m × BlockHash ≤ Target$$ and the reward will be $$m \times Reward$$.
+An x-mining transaction is valid only in a block with `KECCAK(BlockkHash) % m == 0` and the reward will be $$m \times Reward$$.
