@@ -11,4 +11,6 @@
 * [Advanced Mining](advanced-mining/README.md)
   * [X-Mining](advanced-mining/x-mining.md)
   * [Bounty Hunting](advanced-mining/bounty-hunting.md)
-* [Referral Network](referral-network.md)
+* [Referral Network](referral-network/README.md)
+  * [Rent](referral-network/rent.md)
+  * [Commission](referral-network/commission.md)

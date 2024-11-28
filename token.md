@@ -1,5 +1,5 @@
 ---
-description: One token to END them all.
+description: Endure to the Endgame.
 ---
 
 # The END Token
@@ -11,7 +11,7 @@ Endcoin (END) is the crypto token of the Endurio Protocol.
 * In the [Brand Market](./):
   * END is required to fund _user brand_ campaign
   * END is paid by campaigns to the miners mining _user brand_
-* In the [Referral Network](referral-network.md):
+* In the [Referral Network](referral-network/):
   * END is burnt to pay for rent.
   * END is paid as a commission for each successful mining.
 
