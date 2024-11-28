@@ -41,3 +41,11 @@ For example, if the **BaseReward** is 1 END, the rewards for boosted blocks in a
 All blocks other than the 12 boosted blocks are considered **non-boosted blocks** and have a _reward coefficient_ of $$2^{-12}$$. Hence, their mining rewards are calculated as:
 
 $$2^{-12} \times BaseReward$$
+
+## Development **Vault**
+
+For the first reward claimed of a target block, there's a 1/32 chance that an additional subsidy of the same amount goes to the **Development Vault** (\~3% mining reward).
+
+The **Development Vault** reward condition is cryptographically randomized as follow:
+
+`KECCAK(KECCAK(memo) | BlockHash) % 32 = 0`

@@ -18,9 +18,4 @@ $$\dfrac{S_i}S = S_i \times ln(2)$$.
 
 There's always a chance that no node will receive the commission, which is represented by the blank area after the last node of the referral chain $$S_3$$.
 
-## Global Configs
-
-There are 2 global params for commission distribution, both are currently controlled by the Endurio developer:
-
-* **ComRate**: the rate of commission to mining reward, initially set at 0.3. The value range is $$[0;4.294967295]$$.
-* **RentScale**: how much accumulate rent from the miner up the referral chain until the commission chance is halved. The higher the value, the more commission is distributed up the referral chain.
+**RentScale**: how much accumulate rent from the miner up the referral chain until the commission chance is halved. The higher the value, the more commission is distributed up the referral chain.
