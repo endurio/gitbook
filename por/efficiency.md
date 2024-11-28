@@ -4,7 +4,7 @@ Mining experience and efficiency are designed to incentivize regular, consistent
 
 Mining efficiency is the rate of rewards a miner actually earns from their block reward. It starts at 50% for a fresh, new miner address and can only be increased by gaining experience.
 
-As an address claims rewards, it accumulates experience, which is calculated using the reward coefficient and mining coefficient:
+As an address claims rewards, it accumulates experience, which is calculated using the [reward coefficient](reward.md#boosted-blocks) and [mining coefficient](../advanced-mining/):
 
 $$xp=\displaystyle\sum{\text{RewardCoefficient} \times \text{MiningCoefficient}}$$
 
