@@ -7,7 +7,7 @@ description: One token to END them all.
 Endcoin (END) is the crypto token of the Endurio Protocol.
 
 * END's initial supply is 0 (zero). No token is pre-mined.
-* END is freshly minted only by successful [mining](proof-of-reference/mining.md) `endur.io`
+* END is freshly minted only by successful [mining](por/mining.md) `endur.io`
 * In the [Brand Market](./):
   * END is required to fund _user brand_ campaign
   * END is paid by campaigns to the miners mining _user brand_
