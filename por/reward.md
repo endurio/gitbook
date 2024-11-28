@@ -23,19 +23,21 @@ Boosted blocks with significantly higher rewards are designed to engage human mi
 
 $$2^{6-i} \times BaseReward$$
 
+With $$2^{6-i}$$ is the _reward coefficient_ of the block.
+
 For example, if the **BaseReward** is 1 END, the rewards for boosted blocks in a day will include:
 
-* one block with 64 END,
-* one block with 32 END,
-* one block with 16 END,
-* one block with 8 END,
-* one block with 4 END,
+* a 64x block with 64 END,
+* a 32x block with 32 END,
+* a 16x block with 16 END,
+* a 8x block with 8 END,
+* a 4x block with 4 END,
 * and so on.
 
 **Note:** Boosted blocks of different orders can collide, meaning some of the daily boosted rewards may be lost.
 
 ## Non-Boosted Blocks
 
-All blocks other than the 12 boosted blocks are considered **non-boosted blocks** and have a mining reward of:
+All blocks other than the 12 boosted blocks are considered **non-boosted blocks** and have a _reward coefficient_ of $$2^{-12}$$. Hence, their mining rewards are calculated as:
 
 $$2^{-12} \times BaseReward$$

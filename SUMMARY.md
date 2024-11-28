@@ -7,6 +7,8 @@
   * [Relaying](por/relaying.md)
   * [Claiming](por/claiming.md)
   * [Reward](por/reward.md)
+  * [Efficiency](por/efficiency.md)
 * [Advanced Mining](advanced-mining/README.md)
   * [X-Mining](advanced-mining/x-mining.md)
   * [Bounty Hunting](advanced-mining/bounty-hunting.md)
+* [Referral Network](referral-network.md)
