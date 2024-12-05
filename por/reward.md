@@ -1,51 +1,34 @@
 # Reward
 
-## Base Reward
+Rewards are distributed in 30-minute time slots, with 48 slots per day. The reward for each slot is shared among all successful miners within that slot based on their block target difficulty and [mining coefficient](../advanced-mining/).
 
-The total reward paid for all mining transactions in a Bitcoin block is calculated based on the block's Target and PayRate of the mining _brand_.
+If the mining brand is a user-defined brand (not `endur.io`), the reward is determined by its campaign owner in the [Brand Market](../brand-market/).
 
-$$BaseReward = PayRate \times {BaseTarget \over Target}$$
+## Boosted Slots
 
-The PayRate of the system brand [_endur.io_](http://endur.io/) is 1.0.\
-The PayRate of _user brand_ is set by the campaign owner in the Brand Market.
-
-The BaseTarget is an immutable system value initialized at the protocol's launch to match the current Bitcoin mining Target at that time. (i.e. $$BaseTarget \over Target$$ is set to 1.0 initially, and its increases or decreases follow the Bitcoin network difficulty).
-
-## Boosted Blocks
-
-Day $$n$$ (starting with block `144×n`) contains at most 12 boosted blocks, where the $$i^{th}$$ boosted block is calculated using the following formula to ensure a consistent mining schedule every day for a week:
+A day (starting with slot 48 × 𝑛) contains at most 12 boosted slots. Each boosted slot is calculated using the following formula to ensure a consistent mining schedule every day for a week:
 
 ```
-144×n + KECCAK(n/7 | i) % 144
+48×n + KECCAK(n/7 | i) % 48
 ```
 
-Boosted blocks with significantly higher rewards are designed to engage human miners, making miner bots less advantageous during the initial phase of the protocol. The mining reward for the i-th boosted block is calculated as:
+Boosted slots, which have significantly higher rewards, are designed to engage human miners and make mining bots less advantageous during the initial phase of the protocol. The mining reward for the 𝑖-th boosted slot is $$2^{6-i}$$ END.
 
-$$2^{6-i} \times BaseReward$$
+Thus, the rewards for boosted slots in a day will include:
 
-With $$2^{6-i}$$ is the _reward coefficient_ of the block.
-
-For example, if the **BaseReward** is 1 END, the rewards for boosted blocks in a day will include:
-
-* a 64x block with 64 END,
-* a 32x block with 32 END,
-* a 16x block with 16 END,
-* a 8x block with 8 END,
-* a 4x block with 4 END,
+* a 64x slot with 64 END,
+* a 32x slot with 32 END,
+* a 16x slot with 16 END,
+* a 8x slot with 8 END,
+* a 4x slot with 4 END,
 * and so on.
 
-**Note:** Boosted blocks of different orders can collide, meaning some of the daily boosted rewards may be lost.
+**Note:** Boosted slots of different rewards may collide, meaning some daily boosted rewards could be lost.
 
-## Non-Boosted Blocks
+## Non-Boosted Slots
 
-All blocks other than the 12 boosted blocks are considered **non-boosted blocks** and have a _reward coefficient_ of $$2^{-12}$$. Hence, their mining rewards are calculated as:
-
-$$2^{-12} \times BaseReward$$
+All slots other than the 12 boosted slots are considered non-boosted slots and have a mining reward of $$2^{-12}$$ END.
 
 ## Development **Vault**
 
-For the first reward claimed of a target block, there's a 1/32 chance that an additional subsidy of the same amount goes to the **Development Vault** (\~3% mining reward).
-
-The **Development Vault** reward condition is cryptographically randomized as follow:
-
-`KECCAK(KECCAK(memo) | BlockHash) % 32 = 0`
+For each slot mined, an additional 1/32 of the slot's rewards is minted to the Development Vault, accounting for approximately 3% of the mining rewards.
