@@ -1,10 +1,10 @@
 ---
-description: Endure to the Endgame.
+description: Endurance 'till the End of Time
 ---
 
 # The ENDU Token
 
-Endcoin (ENDU) is the crypto token of the Endurio Protocol.
+ENDU is the crypto token of the Endurio Protocol.
 
 * ENDU's initial supply is 0 (zero). No token is pre-mined.
 * ENDU is freshly minted only by successful [mining](por/mining.md) `endur.io`
@@ -14,4 +14,3 @@ Endcoin (ENDU) is the crypto token of the Endurio Protocol.
 * In the [Referral Network](referral-network/):
   * ENDU is burnt to pay for rent.
   * ENDU is paid as a commission for each successful mining.
-
