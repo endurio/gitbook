@@ -23,4 +23,4 @@ Miners without a parent in the [Referral Network](../referral-network/) only acc
 
 With an Efficiency Coefficient (w) of 1024, it is estimated to take approximately 16 days of mining a 64x block to increase efficiency to 75%, another 16 days are required to reach 87.5%, and so on.
 
-On claiming a reward, only $$\text{Efficiency}\times \text{Reward}$$ of END is minted to the miner, while the rest is not minted at all.
+On claiming a reward, only $$\text{Efficiency}\times \text{Reward}$$ of ENDU is minted to the miner, while the rest is not minted at all.

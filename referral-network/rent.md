@@ -1,6 +1,6 @@
 # Rent
 
-Anyone can join the referral network, but nodes must pay rent to have a chance of receiving commissions from descendant nodes' mining rewards. Rent is paid in stablecoins and used to buy back and burn END tokens through the END/USD AMM.
+Anyone can join the referral network, but nodes must pay rent to have a chance of receiving commissions from descendant nodes' mining rewards. Rent is paid in stablecoins and used to buy back and burn ENDU tokens through the ENDU/USD AMM.
 
 The higher the rent, the greater the chance a node has of receiving commissions. Additionally, the closer a node is to the miner in terms of cumulative rent, the higher its chance of earning commissions.
 
