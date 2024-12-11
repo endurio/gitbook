@@ -4,7 +4,7 @@ When a $$Reward$$ is claimed by miner $$M$$, one of the nodes in the referral ch
 
 The chance of receiving commission for each node is proportional to their area in the following graph, where the miner is node $$0$$ and node $$i+1$$ is the parent of node $$i$$.
 
-<figure><img src="../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
 
 The curve is $$f(x) = (\frac 1 2)^x$$, with $$r_i$$ is the effective rent of node $$i$$ and $$x_i = \displaystyle\sum_0^i{r_i \over RentScale}$$, we have: $$S_i=\displaystyle\int_{x_{i-1}}^{x_i}f(x)dx$$
 
