@@ -4,6 +4,8 @@ Rewards are distributed in 30-minute time slots, with 48 slots per day. The rewa
 
 If the mining brand is a user-defined brand (not `endur.io`), the reward is determined by its campaign owner in the [Brand Market](../brand-market/).
 
+<figure><img src="../.gitbook/assets/slot-reward.svg" alt=""><figcaption></figcaption></figure>
+
 ## Boosted Slots
 
 A day (starting with slot 48 × 𝑛) contains at most 12 boosted slots. Each boosted slot is calculated using the following formula to ensure a consistent mining schedule every day for a week:
