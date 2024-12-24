@@ -35,6 +35,6 @@ To make the bounty recipients different for each miner, the recent transaction i
 
 ## Bounty Reward
 
-$$BountyReward=2n\times Reward \times \dfrac{Target}{max(Target, BountyTarget)}$$
+$$BountySlotShare=2n\times SlotShare \times \dfrac{Target}{max(Target, BountyTarget)}$$
 
 With _n_ is the number of bounty outputs and _BountyTarget_ is the block target of the sampled bounty recipient transaction.
