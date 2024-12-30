@@ -14,13 +14,13 @@ $$\text{Efficiency}= 1-\dfrac{1}{2\times 2^{xp\over w}}$$
 
 Here:
 
-* w is the **Efficiency Coefficient**, set to 1024.
+* w is the **Efficiency Coefficient**, set to 115,200.
 * xp is the miner's accumulated experience.
 
 Miners without a parent in the [Referral Network](../referral-network/) only accumulate half of the mining experience.
 
-<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption><p>Experience and Efficiency</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>Experience and Efficiency</p></figcaption></figure>
 
-With an Efficiency Coefficient (w) of 1024, it is estimated to take approximately 16 days of mining a 64x block to increase efficiency to 75%, another 16 days are required to reach 87.5%, and so on.
+With an Efficiency Coefficient (w) of 115,200, it is estimated to take approximately 16 days of mining all major blocks to increase efficiency to 75%, another 16 days are required to reach 87.5%, and so on.
 
 On claiming a reward, only $$\text{Efficiency}\times \text{Reward}$$ of ENDU is minted to the miner, while the rest is not minted at all.
