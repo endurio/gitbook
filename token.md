@@ -18,16 +18,18 @@ ENDU is the crypto token of the Endurio Protocol.
 
 ### Supply Cap
 
-Under ideal conditions, the total daily mining reward is always less than **128** ENDU. The total daily commission is capped at 30% of this amount, which equals **38.4** ENDU.
+Under ideal conditions, the total daily mining reward is always less than **7,200** ENDU. The total daily commission is capped at 30% of this amount, which equals **2,160** ENDU.
 
-Thus, the total daily token emission is always less than **166.4** ENDU, and this value decays by half every 4 years. Mathematically, the maximum ENDU supply over time is as follows:
+Thus, the total daily token emission is always less than **9,585** ENDU, and this value decays by half every 4 years. Mathematically, the maximum ENDU supply over time is as follows:
 
-* 56,933 tokens in the first year,
-* 106,280 tokens in the first 2 years,
-* 182,218 tokens in the first 4 years,
-* 364,603 tokens over the lifetime of the universe.
+* 3,280,856 tokens in the first year,
+* 6,124,584 tokens in the first 2 years,
+* 10,500,656 tokens in the first 4 years,
+* \~21 million tokens over the lifetime of the universe.
 
-<figure><img src=".gitbook/assets/image (14).png" alt=""><figcaption><p>Token emission rate by day</p></figcaption></figure>
+
+
+<figure><img src=".gitbook/assets/image (15).png" alt=""><figcaption><p>Token emission rate by day</p></figcaption></figure>
 
 In practice, the actual token supply will be much lower due to miner [inefficency](por/efficiency.md), missed [commission](referral-network/commission.md), and conflicts or missed opportunities in [boosted reward](por/reward.md) slots.
 
