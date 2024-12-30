@@ -1,6 +1,6 @@
 # Efficiency
 
-Mining experience and efficiency are designed to incentivize regular, consistent, and loyal miners over seasonal ones. They also discourage miners from changing their reference in the [Referral Network](../referral-network/), creating a form of effort investment in the system.
+Mining experience and efficiency are designed to incentivize regular, consistent, and loyal miners over seasonal ones. They also discourage miners from changing their referrer in the [Referral Network](../referral-network/), creating a form of effort investment in the system.
 
 Mining efficiency is the rate of rewards a miner actually earns from their block reward. It starts at 50% for a fresh, new miner address and can only be increased by gaining experience.
 
