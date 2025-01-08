@@ -1,6 +1,6 @@
 # Rent
 
-Anyone can join the referral network, but nodes must pay rent to have a chance of receiving commissions from descendant nodes' mining rewards. Rent is paid in stablecoins and used to buy back and burn ENDU tokens through the ENDU/USD AMM.
+Anyone can join the referral network, but nodes must pay rent to have a chance of receiving commissions from descendant nodes' mining rewards. Rent is paid in ENDU tokens to burn, taking them out of the circulation.
 
 The higher the rent, the greater the chance a node has of receiving commissions. Additionally, the closer a node is to the miner in terms of cumulative rent, the higher its chance of earning commissions.
 
@@ -31,4 +31,4 @@ An inactive/expired node will have its rent decayed overtime. This decayed rent 
 
 If a node with rent `r` is inactive for `T` week(s), its decaying rent will be $$\dfrac{r}{2^T}$$.
 
-Technically, it might be implemented as $${\dfrac{r}{2^{\lfloor{T}\rfloor}}} (1-\dfrac{\{T\}}2)$$ to avoid floating point calculation.\
+Technically, it might be implemented as $${\dfrac{r}{2^{\lfloor{T}\rfloor}}} (1-\dfrac{\{T\}}2)$$ to avoid floating point calculation.\\
