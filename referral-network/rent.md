@@ -1,34 +1,23 @@
 # Rent
 
-Anyone can join the referral network, but nodes must pay rent to have a chance of receiving commissions from descendant nodes' mining rewards. Rent is paid in ENDU tokens to burn, taking them out of the circulation.
+Anyone can join the referral network, but nodes must pay rent to qualify for receiving commissions from the mining rewards of descendant nodes. Rent is paid in ENDU tokens, which are then burned, permanently removing them from circulation.
 
-The higher the rent, the greater the chance a node has of receiving commissions. Additionally, the closer a node is to the miner in terms of cumulative rent, the higher its chance of earning commissions.
+The higher the rent a node pays, the greater its chance of receiving commissions. Moreover, the closer a node is to the miner in terms of cumulative rent, the higher its likelihood of earning commissions.
 
-Rent can be decreased at any time and free of charge. However, increasing rent involves fees and time restrictions. There are two ways to increase rent: normal upgrades and instant promotions.
+Rent is paid for a minimum period of two weeks (RentEpoch). The next rent can only be paid after the previous rent has expired. While the next rent can be reduced without any restrictions or costs, increasing the rent incurs fees and is subject to rate limitations.
 
-## **Rent Upgrade**
+## **Rent Upgrade Fee**
 
-Conditions:
+$$Fee = \left[\dfrac{min(cR, nR-cR)}2 + max(0, nR-2cR)\right] \times RentEpoch$$
 
-* After 1 week from the last rent upgrade or promotion.
-* New rent is no higher than 2 times of old rent.
+With:
 
-$$\text{UpgradeFee}=(\text{NewRent}−\text{OldRent})×302400$$
+* cR: current rent (with inactivity reducing)
+* nR: new desired rent
+* RentEpoch: 2 weeks
 
-**Note**: 302400 is half a week in seconds.
+## **Inactive Rent Reduce**
 
-## Instant Promotion
+An inactive or expired node will have its rent reduced linearly over the rent epoch. This reduced rent will serve as the current rent (cR) when the node is reactivated.
 
-If the upgrade condition is not met, rent can be instantly escalated by paying 3 times the upgrade fee.
-
-$$\text{EscalateFee}=3 \times\text{UpgradeFee}$$
-
-The first rent setup for an uninitialized node is always a promotion.
-
-## **Inactive Rent Decay**
-
-An inactive/expired node will have its rent decayed overtime. This decayed rent will be used as the _current rent_ when the node is reactivated.
-
-If a node with rent `r` is inactive for `T` week(s), its decaying rent will be $$\dfrac{r}{2^T}$$.
-
-Technically, it might be implemented as $${\dfrac{r}{2^{\lfloor{T}\rfloor}}} (1-\dfrac{\{T\}}2)$$ to avoid floating point calculation.\\
+$$cR = lastRent \times (1 - \dfrac{now - lastExpiry}{RentEpoch})$$
