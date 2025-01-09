@@ -2,7 +2,7 @@
 
 When a reward is claimed by a node, an additional 30% of the token reward is distributed as commission units to the node and all its ancestor nodes in the referral chain. These commission units accumulate in each node until they are either manually taken or claimed alongside the node's own rewards.
 
-With an accumulated commission unit of 𝐶 C, a node can take the following amount of tokens:
+With an accumulated commission unit of C, a node can take the following amount of tokens:
 
 $$T = C \times (1 - 2^{{-Rent}\over{RentBase}})$$
 

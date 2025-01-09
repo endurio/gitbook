@@ -2,7 +2,10 @@
 
 Referral Network (RefNet) is a referral affiliate network represented as a forest data structure.
 
-Each node can refer to a parent node. A node with no parent is considered a root node, and root nodes accumulate only half of the [experience](../por/efficiency.md) when claiming rewards. The parent node reference cannot be changed or removed.
+Each node can refer to a parent node. A node without a parent is considered a root node. Root nodes do not gain any additional benefits compared to nodes with a parent and miss out on the following advantages:
 
-For each mining reward claimed, up to 30% of the reward is minted to a single node in the miner's referral chain as a commission.
+* **Social and Technical Support** from ancestor nodes.
+* **Commission Feedback**: An upcoming feature that allows parent nodes to share a portion of their commission with their descendants.
+
+The parent node reference is permanent and cannot be changed or removed.
 
