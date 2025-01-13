@@ -18,5 +18,5 @@
   * [Campaign](brand-market/campaign.md)
   * [Brands Mining](brand-market/brands-mining.md)
 * [User Guide](user-guide/README.md)
-  * [Main Interface](user-guide/main-interface.md)
+  * [App](user-guide/app.md)
   * [Settings](user-guide/settings.md)
