@@ -1,7 +1,7 @@
 # Table of contents
 
 * [Endurio](README.md)
-* [The ENDU Token](token.md)
+* [The Token](token.md)
 * [Proof of Reference](por/README.md)
   * [Mining](por/mining.md)
   * [Relaying](por/relaying.md)

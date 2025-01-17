@@ -1,8 +1,4 @@
----
-description: Endurance 'till the End of Time
----
-
-# The ENDU Token
+# The Token
 
 ENDU is the crypto token of the Endurio Protocol.
 
