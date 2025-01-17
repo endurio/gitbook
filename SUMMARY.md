@@ -18,5 +18,6 @@
   * [Campaign](brand-market/campaign.md)
   * [Brands Mining](brand-market/brands-mining.md)
 * [User Guide](user-guide/README.md)
-  * [App](user-guide/app.md)
+  * [Key Management](user-guide/key-management.md)
+  * [Miner](user-guide/miner.md)
   * [Settings](user-guide/settings.md)
