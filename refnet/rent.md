@@ -4,20 +4,21 @@ Anyone can join the referral network, but nodes must pay rent to qualify for rec
 
 The higher the rent a node pays, the greater its chance of receiving commissions. Moreover, the closer a node is to the miner in terms of cumulative rent, the higher its likelihood of earning commissions.
 
-Rent is paid for a minimum period of two weeks (RentEpoch). The next rent can only be paid after the previous rent has expired. While the next rent can be reduced without any restrictions or costs, increasing the rent incurs fees and is subject to rate limitations.
+Rent is paid for a minimum period of two weeks (RentEpoch). While the next rent can be reduced without any restrictions or costs, increasing the rent incurs fees and is subject to rate limitations.
 
 ## **Rent Upgrade Fee**
 
-$$Fee = \left[\dfrac{min(cR, nR-cR)}2 + max(0, nR-2cR)\right] \times RentEpoch$$
+There's a limit that rent can be upgraded with cheaper fee:
+
+$$L = cR \times 2^\dfrac{-|expiry - now|}{RentEpoch}$$
+
+So the rent upgrade fee is:
+
+$$Fee = \left[\dfrac{min(nR, L)-cR}2 + max(0,nR-L)\right] \times RentEpoch$$
 
 With:
 
-* cR: current rent (with inactivity reducing)
 * nR: new desired rent
+* cR: last rent set by user
+* expiry: the last rent expiry
 * RentEpoch: 2 weeks
-
-## **Inactive Rent Reduce**
-
-An inactive or expired node will have its rent reduced linearly over the rent epoch. This reduced rent will serve as the current rent (cR) when the node is reactivated.
-
-$$cR = lastRent \times (1 - \dfrac{now - lastExpiry}{RentEpoch})$$
