@@ -14,7 +14,7 @@ Step 5: Make sure the Fee tier (<mark style="color:yellow;">**C**</mark>) have t
 
 <figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
-Step 6: Make sure the price is calculate for ENDU in (<mark style="color:yellow;">**D**</mark>)
+Step 6: Make sure the price is displayed for ENDU in (<mark style="color:yellow;">**D**</mark>)
 
 Step 7: Make sure to select the "Custome range" in (<mark style="color:yellow;">**E**</mark>)
 
@@ -22,7 +22,7 @@ Step 8: Check the current price of ENDU in (<mark style="color:yellow;">**F**</m
 
 Step 9: Input the price range that you want to buy ENDU from (<mark style="color:yellow;">**G**</mark>) to (<mark style="color:yellow;">**H**</mark>), and click Continue.
 
-If the Max price (H) in Step 9 is lower than the current price (<mark style="color:yellow;">**F**</mark>), you will provide only USDT (or WBTC) to buy ENDU from the market.
+If the Max price (<mark style="color:yellow;">**H**</mark>) in Step 9 is lower than the current price (<mark style="color:yellow;">**F**</mark>), you will provide only USDT (or WBTC) to buy ENDU from the market.
 
 <figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
