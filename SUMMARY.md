@@ -21,3 +21,4 @@
   * [Key Management](user-guide/key-management.md)
   * [Miner](user-guide/miner.md)
   * [Settings](user-guide/settings.md)
+  * [Add Liquidity](user-guide/add-liquidity.md)
