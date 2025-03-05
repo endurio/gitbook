@@ -8,18 +8,6 @@ Bounty outputs are all outputs after the first OP\_RET except the last one (rese
 
 The index of sampling bounty output in the bounty outputs array is $$BlockHash % N$$$$BlockHash % N$$`BlockHash % N` where `N`$$N$$ is the number of the bounty outputs.
 
-## Bounty Amount
-
-In Bitcoin, a dust output will be ignored by wallets and recipients because it's not beneficial to spend an amount too small. In bounty hunting transaction, miner makes them an offer they can't refuse.
-
-A useful amount is an amount large enough to pay the fee of the transaction to spend that output. The transaction fee is calculated by the mining transaction itself.
-
-$$MinTxSize = 10+FirstInputSize+BountyOutputSize$$
-
-$$UsefulAmount = \dfrac{MinTxSize}{TxSize} \times TxFee$$
-
-All bounty outputs value must be no less than **UsefulAmount** regardless of which is sampled to be verified.
-
 ## Bounty Recipient
 
 Bounty recipient must be the recipient address of the last output (usually the coin change address) of a transaction in a recent block and
@@ -35,6 +23,17 @@ To make the bounty recipients different for each miner, the recent transaction i
 
 ## Bounty Reward
 
-$$BountySlotShare=2n\times SlotShare \times \dfrac{Target}{max(Target, BountyTarget)}$$
+Bounty rewards have diminishing returns based on the total number of bounties mined. This creates a dynamic where each miner must develop their own strategy to optimize the number of bounties they choose to mine, balancing effort and reward efficiency.
 
-With _n_ is the number of bounty outputs and _BountyTarget_ is the block target of the sampled bounty recipient transaction.
+| Bounty | Share | Effective | Reward Rate |
+| ------ | ----- | --------- | ----------- |
+| 1      | 1     | 55%       | 2           |
+| 2      | 0.95  | 48%       | 2.95        |
+| 3      | 0.9   | 40%       | 3.85        |
+| 4      | 0.85  | 32%       | 4.7         |
+| 5      | 0.8   | 24%       | 5.5         |
+| 6      | 0.75  | 16%       | 6.25        |
+| 7      | 0.7   | 9%        | 6.95        |
+| 8      | 0.65  | 1%        | 7.6         |
+
+The more bounty&#x20;
