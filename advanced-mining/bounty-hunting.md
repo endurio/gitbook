@@ -25,13 +25,4 @@ To make the bounty recipients different for each miner, the recent transaction i
 
 Bounty rewards have diminishing returns based on the total number of bounties mined. This creates a dynamic where each miner must develop their own strategy to optimize the number of bounties they choose to mine, balancing effort and reward efficiency.
 
-| Bounty | Share | Effective | Reward Rate |
-| ------ | ----- | --------- | ----------- |
-| 1      | 1     | 55%       | 2           |
-| 2      | 0.95  | 48%       | 2.95        |
-| 3      | 0.9   | 40%       | 3.85        |
-| 4      | 0.85  | 32%       | 4.7         |
-| 5      | 0.8   | 24%       | 5.5         |
-| 6      | 0.75  | 16%       | 6.25        |
-| 7      | 0.7   | 9%        | 6.95        |
-| 8      | 0.65  | 1%        | 7.6         |
+<table><thead><tr><th width="98">Bounty</th><th width="96">Share</th><th width="94">Effective</th><th width="126">Reward Rate</th></tr></thead><tbody><tr><td>1</td><td>1</td><td>55%</td><td>2</td></tr><tr><td>2</td><td>0.95</td><td>48%</td><td>2.95</td></tr><tr><td>3</td><td>0.9</td><td>40%</td><td>3.85</td></tr><tr><td>4</td><td>0.85</td><td>32%</td><td>4.7</td></tr><tr><td>5</td><td>0.8</td><td>24%</td><td>5.5</td></tr><tr><td>6</td><td>0.75</td><td>16%</td><td>6.25</td></tr><tr><td>7</td><td>0.7</td><td>9%</td><td>6.95</td></tr><tr><td>8</td><td>0.65</td><td>1%</td><td>7.6</td></tr></tbody></table>
