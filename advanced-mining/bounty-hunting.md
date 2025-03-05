@@ -35,5 +35,3 @@ Bounty rewards have diminishing returns based on the total number of bounties mi
 | 6      | 0.75  | 16%       | 6.25        |
 | 7      | 0.7   | 9%        | 6.95        |
 | 8      | 0.65  | 1%        | 7.6         |
-
-The more bounty&#x20;
