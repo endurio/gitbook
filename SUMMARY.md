@@ -24,3 +24,4 @@
   * [Settings](user-guide/settings.md)
   * [Node Management](user-guide/node-management.md)
   * [Add Liquidity](user-guide/add-liquidity.md)
+  * [Bounty Hunting](user-guide/bounty-hunting.md)
